@@ -37,18 +37,20 @@
 %\input{\repChap/Cours/Cy_04_Ch_02_TorseursCinetiquesDynamiques.tex}
 
 
+\def\columnseprulecolor{\color{ocre}}
+\setlength{\columnseprule}{0.4pt} 
+
 
 \renewcommand{\td}{02_Statique_PFS_3D_01_MC2E}
 \renewcommand{\repExo}{\repChap/\td}
 \graphicspath{{\repStyle/png/}{\repExo/images/}}
-
-
 
 \proffalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
 \begin{multicols}{2}
+\setcounter{numques}{0}
 \input{\repExo/\td.tex}
 \end{multicols}
 
@@ -58,17 +60,51 @@
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
 \begin{multicols}{2}
+\setcounter{numques}{0}
 \input{\repExo/\td.tex}
 \end{multicols}
-
 
 \newpage
 \proftrue
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
+\setcounter{numques}{0}
 \input{\repExo/\td.tex}
 
+
+
+\renewcommand{\td}{02_Statique_PFS_3D_02_Quille}
+\renewcommand{\repExo}{\repChap/\td}
+\graphicspath{{\repStyle/png/}{\repExo/images/}}
+
+\proffalse
+\newpage
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+\newpage
+\proffalse \colletrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+\newpage
+\proftrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
 
 
 
