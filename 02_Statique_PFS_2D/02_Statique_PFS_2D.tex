@@ -78,7 +78,7 @@
 \renewcommand{\repExo}{\repChap/\td}
 \graphicspath{{\repStyle/png/}{\repExo/images/}}
 
-\proffalse \collefalse
+\proffalse \collefalse \normaltrue \difficilefalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
@@ -88,7 +88,27 @@
 \end{multicols}
 
 \newpage
-\proffalse \colletrue
+\proffalse \collefalse \normalfalse \difficiletrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+\newpage
+\proffalse \colletrue  \normaltrue \difficilefalse
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+\newpage
+\proffalse \colletrue \normalfalse \difficiletrue
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
