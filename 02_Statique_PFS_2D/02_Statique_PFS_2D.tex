@@ -45,7 +45,40 @@
 \renewcommand{\repExo}{\repChap/\td}
 \graphicspath{{\repStyle/png/}{\repExo/images/}}
 
-\proffalse
+\proffalse \collefalse
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+%\newpage
+%\proffalse \colletrue
+%\input{\repExo/\td_xx.tex}
+%\input{\repStyle/pagegarde_TD.tex}
+%\vspace{6cm}
+%\begin{multicols}{2}
+%\setcounter{numques}{0}
+%\input{\repExo/\td.tex}
+%\end{multicols}
+
+\newpage
+\proftrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\vspace{6cm}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+
+
+\newpage
+\renewcommand{\td}{02_Statique_PFS_2D_02_DBA}
+\renewcommand{\repExo}{\repChap/\td}
+\graphicspath{{\repStyle/png/}{\repExo/images/}}
+
+\proffalse \collefalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
@@ -65,14 +98,12 @@
 \end{multicols}
 
 \newpage
-\proftrue
+\proftrue\collefalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \vspace{6cm}
 \setcounter{numques}{0}
 \input{\repExo/\td.tex}
-
-
 
 
 \end{document}
