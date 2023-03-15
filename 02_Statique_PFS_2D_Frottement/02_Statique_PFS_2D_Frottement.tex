@@ -24,17 +24,10 @@
 \def\xxchapitre{}
 \begin{document}
 
-\def\xxcompetences{}
-\def\xxfigures{}
-
-\graphicspath{{\repStyle/png/}{\repChap/02_Statique_PFS_3D_01_MC2E/images/}}
-
-%\setlength{\columnseprule}{.1pt}
 
 \livrettrue
 
-\input{\repStyle/Cycle_04_Entete}
-%\input{\repChap/Cours/Cy_04_Ch_02_TorseursCinetiquesDynamiques.tex}
+\input{\repStyle/Cycle_03_PFD_Entete}
 
 
 \def\columnseprulecolor{\color{ocre}}
@@ -48,6 +41,27 @@
 \proffalse \collefalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
+\pagestyle{fancy}
+\thispagestyle{plain}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+
+\newpage
+
+\renewcommand{\td}{02_Statique_PFS_2D_Frottement_02_wHing}
+\renewcommand{\repExo}{\repChap/\td}
+\graphicspath{{\repStyle/png/}{\repExo/images/}}
+
+\proffalse \collefalse
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
 \vspace{6cm}
 \begin{multicols}{2}
 \setcounter{numques}{0}
@@ -63,15 +77,15 @@
 %\setcounter{numques}{0}
 %\input{\repExo/\td.tex}
 %\end{multicols}
-
-\newpage
-\proftrue
-\input{\repExo/\td_xx.tex}
-\input{\repStyle/pagegarde_TD.tex}
-\vspace{6cm}
-\setcounter{numques}{0}
-\input{\repExo/\td.tex}
-
+%
+%\newpage
+%\proftrue
+%\input{\repExo/\td_xx.tex}
+%\input{\repStyle/pagegarde_TD.tex}
+%\vspace{6cm}
+%\setcounter{numques}{0}
+%\input{\repExo/\td.tex}
+%
 
 
 
