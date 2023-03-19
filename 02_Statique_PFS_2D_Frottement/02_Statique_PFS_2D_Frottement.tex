@@ -51,12 +51,26 @@
 
 
 \newpage
+\proftrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\pagestyle{fancy}
+\thispagestyle{plain}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
+
+\newpage
+
 
 \renewcommand{\td}{02_Statique_PFS_2D_Frottement_02_wHing}
 \renewcommand{\repExo}{\repChap/\td}
 \graphicspath{{\repStyle/png/}{\repExo/images/}}
 
-\proftrue \collefalse
+\proffalse \collefalse
 \input{\repExo/\td_xx.tex}
 \input{\repStyle/pagegarde_TD.tex}
 \pagestyle{fancy}
@@ -67,6 +81,19 @@
 \setcounter{numques}{0}
 \input{\repExo/\td.tex}
 \end{multicols}
+
+\newpage
+\proftrue
+\input{\repExo/\td_xx.tex}
+\input{\repStyle/pagegarde_TD.tex}
+\pagestyle{fancy}
+\thispagestyle{plain}
+\vspace{6cm}
+\begin{multicols}{2}
+\setcounter{numques}{0}
+\input{\repExo/\td.tex}
+\end{multicols}
+
 
 %\newpage
 %\proffalse \colletrue
